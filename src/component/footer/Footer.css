@@ -1,0 +1,42 @@
+.footer{
+  background-color: rgba(217, 217, 217, 1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(190px,1fr));
+  gap: 70px;
+  padding: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-top: 60px;
+}
+.footer  a{
+  display: block;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: start;
+  color: #808080;
+  font-weight: lighter;
+  font-size: 15px;
+  line-height: 2.9;
+  font-family: 'Roboto';
+}
+.footer h4{
+  font-family: 'Righteous';
+  margin-bottom: 20px;
+  color: rgba(0, 0, 0, 0.75);
+}
+.footer .icon {
+  display: flex;
+}
+.menu1 h2{
+  font-family: 'Righteous';
+  color: rgba(128, 128, 128, 1);
+  margin-top: 10px;
+  font-weight: 200;
+  font-size: 20px;
+}
+.menu1{
+  padding-left: 30px;
+  padding-right: 30px;
+}

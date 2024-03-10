@@ -1,0 +1,71 @@
+ .myCart{
+  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+.myCart h1{
+  font-family: 'Righteous';
+  border-bottom: 4px solid rgba(0, 0, 0, 0.72);
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.72);
+}
+td{
+  border: none;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-family: 'Righteous';
+}
+th{
+  font-family: 'Righteous';
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: left;
+  padding-left: 10px;
+}
+.cart h3{
+  font-family: 'Righteous';
+  font-weight: lighter;
+  color: #000;
+}
+.image-cart{
+  position: absolute;
+  top: 0;
+  width: 60%;
+  z-index: -1;
+}
+.img-cart{
+  width: 120px;
+}
+td p{
+  color:  rgba(0, 0, 0, 0.5);
+  font-family:'Righteous' ;
+  padding: 0;
+}
+.code{
+  line-height: 1.7;
+  text-align: start;
+  justify-items: center;
+  justify-content: center;
+}
+@media (max-width: 700px) {
+  .cart{
+    padding: 0;
+    margin: 0;
+  }
+  td{
+    padding:0;
+  }
+  .img-cart{
+    width: 70px;
+  }
+  td p{
+    font-size: 10px;
+    padding: 0;
+  }
+  th{
+    padding: 0;
+    font-size: 12px;
+  }
+}
