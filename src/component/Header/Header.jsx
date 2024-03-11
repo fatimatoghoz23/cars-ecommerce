@@ -16,8 +16,9 @@ const Header = () => {
         <img src='./logo.png' width={130} className="image-h" />
         <div className="menu flexCenter" >
           <ul className={menuOpened ? "open":""}>
-          <a href="" className='active'>Home</a>
-          <a href="">Catalogue</a>
+          <a href="/" className='active'>
+           Home</a>
+          <a href="/">Catalogue</a>
           <a href="">Contact Us</a>
           <a href="">Help</a>
           </ul>
@@ -26,10 +27,7 @@ const Header = () => {
         </div>
         
         <div className='flexCenter'>
-          
-                      <Link to={`/Cart`}> <img src='./my cart.png' width={30} className="img-h"/></Link>
-
-         
+          <a href='/Cart'> <img src='./my cart.png' width={30} className="img-h"/></a>
         <button className='h-button'>
           <a href=''>Register</a>
         </button>
