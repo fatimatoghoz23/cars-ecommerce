@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header/Header';
-import {BrowserRouter as Router,Routes ,Route} from 'react-router-dom'
+import {HashRouter as Router,Routes ,Route} from 'react-router-dom'
 import Cart from './component/Cart/Cart';
 import Home from './Home';
 import Product from './component/Product/Product';
@@ -10,7 +10,7 @@ function App() {
   return(
     <>
      <Header/>
-    <Product/>
+   
     <Router>
       <Routes>
       <Route exact Component={Home} path='/' />
