@@ -26,10 +26,10 @@ const Header = () => {
         </div>
         
         <div className='flexCenter'>
-          <button>
+          
                       <Link to={`/Cart`}> <img src='./my cart.png' width={30} className="img-h"/></Link>
 
-          </button>
+         
         <button className='h-button'>
           <a href=''>Register</a>
         </button>
