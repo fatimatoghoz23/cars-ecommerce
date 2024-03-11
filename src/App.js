@@ -9,7 +9,7 @@ function App() {
   
   return(
     <>
-     <Header/>
+     // <Header/>
     <Router>
       <Routes>
       <Route exact Component={Home} path='/' />
