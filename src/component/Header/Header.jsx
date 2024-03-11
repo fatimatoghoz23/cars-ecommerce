@@ -26,7 +26,7 @@ const Header = () => {
         </div>
         
         <div className='flexCenter'>
-          <a href='/Cart'> <img src='./my cart.png' width={30} className="img-h"/></a>
+          <Link to={`/Cart`}> <img src='./my cart.png' width={30} className="img-h"/></Link>
         <button className='h-button'>
           <a href=''>Register</a>
         </button>
