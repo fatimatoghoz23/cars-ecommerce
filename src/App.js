@@ -10,6 +10,7 @@ function App() {
   return(
     <>
      <Header/>
+    <Product/>
     <Router>
       <Routes>
       <Route exact Component={Home} path='/' />
