@@ -5,7 +5,10 @@ import { Link, useParams } from 'react-router-dom';
 import {FaStar} from 'react-icons/fa'
 import { useState } from 'react';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
-
+import "swiper/css"
+import "swiper/css/free-mode"
+import "swiper/css/thumbs"
+import {FreeMode,Navigation,Thumbs} from "swiper/modules"
 const data =[
   {
     name:"Audi",
@@ -40,58 +43,58 @@ const data =[
 
   
 ]
-const img=['/Rectangle 46.png','/Rectangle 47.png','/Rectangle 48.png','/Rectangle 49.png','/Rectangle 49.png']
-const color=['#6799D5','#000000','#ffffff']
+const img=['/ss.png','/Rectangle 47.png','/Rectangle 48.png','/Rectangle 49.png']
+const color=['#6799D5','#000000','#ffeeff']
 function Product() {
+  const[swiper,setSwiper]=useState(null)
+
   const [rating,setRating]=useState(null)
   const [hover,setHover]=useState(null)
   // const { productId } = useParams();
   // const product = Categories.find((product) => product.id === productId);
   // const { image, name } = product;
-  const sliderSettings={
-    slidesPerView:4,
-    spaceBetween:0,
-    breakpoints:{
-      300:{
-        slidesPerView:1
-      },
-      400:{
-        slidesPerView:1
-      },
-      500:{
-        slidesPerView:1
-      },
-      600:{
-        slidesPerView:1
-      },
-      700:{
-        slidesPerView:3
-      },
-      1100:{
-        slidesPerView:4
-      },
-    }
-  }
+  
   return (
     <div>
     <div className="flexCenter m-container">
      <div className="product-left paddings">
-      <div className="product-details paddings innerWidth">
+      <div className="product-details  innerWidth">
         <h2>Honda-Civic Type R</h2>
         <p>6000 cc</p>
-        <img className='x' src='./ss.png' width={500}/>
-        <div className='slider flexCenter' >
-        <Swiper {...sliderSettings}>
-        {img.map((d,i)=>
+        <div className="flexCenter">
+        <Swiper 
+        thumbs={{swiper:swiper}}
+        modules={[FreeMode,Navigation,Thumbs]}
+        className='slider'
+         >
+        {img.map((d)=>
         (
-        <SwiperSlide key={i} >
+        <SwiperSlide>
+        <div className='image-slider flexCenter '>
+        <img src={d} width={400} height={300} />
+        </div> 
+        </SwiperSlide>
+        )
+       )}
+       <SliderButton/>
+       </Swiper>
+        </div>
+        <div className=' flexCenter' >
+        <Swiper navigation={true} 
+        thumbs={{swiper:swiper}}
+        modules={[FreeMode,Navigation,Thumbs]}
+        slidesPerView={4}
+        spaceBetween={3} 
+         >
+        {img.map((d)=>
+        (
+        <SwiperSlide  >
         <div className='image-slider flexCenter '>
         <img src={d} width={100} height={90} />
         </div> 
         </SwiperSlide>
         )
        )}
-       <SliderButton/>
        </Swiper>
      </div>
      </div>
@@ -107,7 +110,7 @@ function Product() {
                 <label>
                 <input className='input-star'  value={currentRating} onClick={()=>setRating(currentRating)} />
                 <FaStar className='star' 
-                color={currentRating <=(hover || rating) ? '#976E72' : '#fff'} 
+                color={currentRating <=(hover || rating) ? '#976E72' : '#eee'} 
                 size={30} 
                 onMouseEnter={()=>setHover(currentRating)}
                 onMouseLeave={()=>setHover(null)} />
@@ -124,13 +127,13 @@ function Product() {
             <h2>Colors</h2>
             <div className="color ">
               {color.map((color,i)=>(
-                <button key={i} style={{backgroundColor:color}} className='btn-style' ></button>
+                <button key={i} style={{backgroundColor:color}}  className='btn-style' ></button>
               ))}
             </div>
             <div className="price ">
             <img src='./min.png' width={20} height={20}/>
            <p>1</p>
-            <img src='./plus.png' width={20} height={20}/>
+            <img src='./plus.png' width={20} height={20} />
             <h2>Price:<span>250$</span></h2>
             </div>
             <div className="button-p">
