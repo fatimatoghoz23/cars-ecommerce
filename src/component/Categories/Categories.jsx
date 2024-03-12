@@ -10,15 +10,15 @@ const data =[
   },
   {
     name:"Honda",
-    image:"/picture33.png"
+    image:"./picture33.png"
   },
    {
     name:"VOLVO",
-    image:"/picture44.png"
+    image:"./picture44.png"
   },
    {
     name:"BMW",
-    image:"/picture55.png"
+    image:"./picture55.png"
   },
   
   
