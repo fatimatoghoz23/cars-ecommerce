@@ -18,32 +18,32 @@ const data =[
   },
   {
     name:"Honda",
-    image:"/picture2.png",
+    image:"./picture2.png",
     color:'Black',
     price:'$240.55'
   },
    {
     name:"BMW",
-    image:"/picture55.png",
+    image:"./picture55.png",
     color:'Black',
     price:'$240.55'
   },
    {
     name:"Volvo",
-    image:"/picture44.png",
+    image:"./picture44.png",
     color:'Black',
     price:'$240.55'
   },
   {
     name:"Volvo",
-    image:"/picture44.png",
+    image:"./picture44.png",
     color:'Black',
     price:'$240.55'
   },
 
   
 ]
-const img=['/ss.png','/Rectangle 47.png','/Rectangle 48.png','/Rectangle 49.png']
+const img=['./ss.png','./Rectangle 47.png','./Rectangle 48.png','./Rectangle 49.png']
 const color=['#6799D5','#000000','#ffeeff']
 function Product() {
   const[swiper,setSwiper]=useState(null)
