@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cars-ecommerce/static/css/main.c3840831.css",
-    "main.js": "/cars-ecommerce/static/js/main.352b0d6a.js",
+    "main.css": "/cars-ecommerce/static/css/main.768c2fcb.css",
+    "main.js": "/cars-ecommerce/static/js/main.17a8f4c2.js",
     "static/js/787.28cb0dcd.chunk.js": "/cars-ecommerce/static/js/787.28cb0dcd.chunk.js",
     "static/media/Vector 1.png": "/cars-ecommerce/static/media/Vector 1.ef0a8e8c11bd57401c34.png",
     "static/media/logo.svg": "/cars-ecommerce/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/cars-ecommerce/index.html",
-    "main.c3840831.css.map": "/cars-ecommerce/static/css/main.c3840831.css.map",
-    "main.352b0d6a.js.map": "/cars-ecommerce/static/js/main.352b0d6a.js.map",
+    "main.768c2fcb.css.map": "/cars-ecommerce/static/css/main.768c2fcb.css.map",
+    "main.17a8f4c2.js.map": "/cars-ecommerce/static/js/main.17a8f4c2.js.map",
     "787.28cb0dcd.chunk.js.map": "/cars-ecommerce/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c3840831.css",
-    "static/js/main.352b0d6a.js"
+    "static/css/main.768c2fcb.css",
+    "static/js/main.17a8f4c2.js"
   ]
 }
