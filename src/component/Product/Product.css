@@ -152,10 +152,11 @@ span{
   .product-right{
     height: 100%;
     padding-top:10%;
-    padding-bottom: 10%;
+    padding-bottom: 50%;
     position: relative;
     left: 20px;
     width: 100%;
+    right: 0;
     
  }
  .product-details img{
@@ -171,6 +172,9 @@ span{
     width: 100%;
     height: 100%;
     
+  }
+  .product-left{
+    width: 100%;
   }
   .product-details .x{
    width: 250px;
