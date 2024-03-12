@@ -131,7 +131,7 @@ function Product() {
               ))}
             </div>
             <div className="price ">
-            <img onClick={()=>setNumber(number-1)} src='./min.png' width={20} height={20}/>
+            <img onClick={()=>number>1?setNumber(number-1):setNumber(1)} src='./min.png' width={20} height={20}/>
            <p>{number}</p>
             <img onClick={()=>setNumber(number+1)} src='./plus.png' width={20} height={20} />
             <h2>Price:<span>250$</span></h2>
