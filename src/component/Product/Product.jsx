@@ -47,7 +47,7 @@ const img=['/ss.png','/Rectangle 47.png','/Rectangle 48.png','/Rectangle 49.png'
 const color=['#6799D5','#000000','#ffeeff']
 function Product() {
   const[swiper,setSwiper]=useState(null)
-
+  const[number,setNumber]=useState(1)
   const [rating,setRating]=useState(null)
   const [hover,setHover]=useState(null)
   // const { productId } = useParams();
@@ -131,9 +131,9 @@ function Product() {
               ))}
             </div>
             <div className="price ">
-            <img src='./min.png' width={20} height={20}/>
-           <p>1</p>
-            <img src='./plus.png' width={20} height={20} />
+            <img onClick={()=>setNumber(number-1)} src='./min.png' width={20} height={20}/>
+           <p>{number}</p>
+            <img onClick={()=>setNumber(number+1)} src='./plus.png' width={20} height={20} />
             <h2>Price:<span>250$</span></h2>
             </div>
             <div className="button-p">
