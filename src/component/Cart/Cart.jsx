@@ -11,19 +11,19 @@ const data =[
   },
   {
     name:"Honda",
-    image:"/picture2.png",
+    image:"./picture2.png",
     color:'Black',
     price:'$240.55'
   },
    {
     name:"BMW",
-    image:"/picture55.png",
+    image:"./picture55.png",
     color:'Black',
     price:'$240.55'
   },
    {
     name:"Volvo",
-    image:"/picture44.png",
+    image:"./picture44.png",
     color:'Black',
     price:'$240.55'
   },
