@@ -10,23 +10,23 @@ const data =[
   },
   {
     name:"Bugatti",
-    image:"/Rectangle2.png"
+    image:"./Rectangle2.png"
   },
    {
     name:"Audi",
-    image:"/Rectangle3.png"
+    image:"./Rectangle3.png"
   },
    {
     name:"Bugatdti",
-    image:"/Rectangle4.png"
+    image:"./Rectangle4.png"
   },
   {
     name:"Bugatdti",
-    image:"/Rectangle4.png"
+    image:"./Rectangle4.png"
   },
   {
     name:"Bugatdti",
-    image:"/Rectangle4.png"
+    image:"./Rectangle4.png"
   },
   
 ]
