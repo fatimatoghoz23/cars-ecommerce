@@ -1,0 +1,194 @@
+.m-container{
+  align-items: flex-end;
+  justify-content:space-between;
+}
+.img-container{
+  width: 60%;
+  height: max-content;
+  overflow: hidden;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  z-index: -1;
+}
+.img-container h1{
+  z-index: 1;
+  position: relative;
+}
+.product-details h2{
+  font-family: 'Righteous';
+  font-size: 40px;
+  font-weight: lighter;
+}
+.product-left{
+  gap: 3rem;
+  padding: 10%;
+  width: 80%;
+  height: 700px;
+}
+.product-right{
+  background: url('/public/Vector 1.png');
+  width:  50%;
+  height: 100%;
+  overflow: hidden;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 70px;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+}
+.product-right .details{
+  display: block;
+  justify-content:center;
+  align-items: flex-start;
+  color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 93%;
+  padding-top: 20%;
+  padding-left: 50%;
+  height: max-content;
+}
+.product-right h1{
+  color: rgba(0, 0, 0, 0.77);
+  font-family: 'Righteous';
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+.product-right h2{
+  font-family: 'Righteous';
+  color: rgba(0, 0, 0, 0.77);
+  font-weight: lighter;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.product-details h1{
+  font-family: 'Righteous';
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.77);
+}
+.product-details p{
+  color:rgba(151, 110, 114, 1);
+  font-family: 'Righteous';
+  font-size:30px;
+}
+.product-details img{
+  margin-left: 20%;
+  z-index: 1;
+  position: relative;
+}
+.btn-style{
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  border: none;
+  margin: 10px;
+}
+.price img{
+ margin: 20px 10px 10px 10px;
+}
+.price p{
+  margin: 20px 10px 10px 10px;
+
+}
+.price h2{
+  margin-left: 10%;
+  color:#976E72;
+}
+span{
+  color: rgba(0, 0, 0, 0.77);
+  font-family: 'Righteous';
+}
+.button-p .add{
+  background: none;
+  font-family:'Righteous' ;
+  font-size: 14px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  padding: 10px 30px 10px 30px;
+  color: rgba(151, 110, 114, 1) ;
+  width: 260px;
+}
+.button-p .buy2{
+    font-family:'Righteous' ;
+    font-size: 13px;
+    border: 1px solid rgba(151, 110, 114, 1);
+    background-color:  rgba(151, 110, 114, 1);
+    color: #fff;
+    border-radius: 30px;
+    padding: 0 30px 0 30px;
+    margin-left: 20px;
+    width: 280px;
+}
+.button-p{
+ display: flex;
+}
+.price{
+  display: flex;
+}
+.d{
+  font-size: 30px;
+}
+.input-star{
+  display: none;
+}
+.star{
+  cursor:pointer;
+}
+.stars{
+  display: flex;
+}
+.slider{
+  width: 60%;
+}
+.but{
+  width: 100%;
+  padding-left: -60px;
+}
+
+@media (max-width: 1300px) {
+  .product-right{
+    height: 100%;
+    padding-top:10%;
+    padding-bottom: 50%;
+    position: relative;
+    left: 20px;
+    width: 100%;
+    right: 0;
+    
+ }
+ .product-details img{
+  margin-left: 0;
+  z-index: 1;
+  position: relative;
+}
+ .slider{
+  width: 100%;
+ }
+  .product-right .details{
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+  }
+  .product-left{
+    width: 100%;
+  }
+  .product-details .x{
+   width: 250px;
+   overflow: hidden;
+   justify-content: center;
+   margin-left: 30%;
+  }
+  .image-slider img{
+    width: 100%;
+  }
+  .swiper{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+}
