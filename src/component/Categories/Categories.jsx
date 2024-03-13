@@ -1,7 +1,6 @@
 import React from 'react'
 import './Categories.css'
 import { Link, useParams } from 'react-router-dom';
-import Product from '../Product/Product';
 import { GoArrowRight } from "react-icons/go";
 const data =[
   {
