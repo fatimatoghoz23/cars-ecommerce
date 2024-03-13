@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header/Header';
-import {BrowserRouter as Router,Routes ,Route} from 'react-router-dom'
+import {HashRouter as Router,Routes ,Route} from 'react-router-dom'
 import Cart from './Pages/Cart/Cart';
 import Main from './Pages/main/Main';
 import Product from './Pages/Product/Product';
