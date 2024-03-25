@@ -1,37 +1,15 @@
-
-import React from 'react'
+import  { useContext, useEffect } from 'react'
 import './Cart.css'
 import { GoX } from "react-icons/go";
+import { Cartcontext } from '../../Context';
+import { useParams } from 'react-router-dom';
+// import { useMyContext } from '../../Context';
 
-const data =[
-  {
-    name:"Audi",
-    image:"./picture22.png",
-    color:'Black',
-    price:'$240.55'
-  },
-  {
-    name:"Honda",
-    image:"./picture2.png",
-    color:'Black',
-    price:'$240.55'
-  },
-   {
-    name:"BMW",
-    image:"./picture55.png",
-    color:'Black',
-    price:'$240.55'
-  },
-   {
-    name:"Volvo",
-    image:"./picture44.png",
-    color:'Black',
-    price:'$240.55'
-  },
 
-  
-]
 function Cart() {
+  const Globalstate = useContext(Cartcontext);
+  const state = Globalstate.state;
+  const dispatch = Globalstate.dispatch;
   return (
     <>
     <img src='./Vector 2.png'className="image-cart" />
@@ -47,12 +25,13 @@ function Cart() {
          <th>Product</th>
          <th>Price</th>
          <th>Color</th>
+         <th>Qty</th>
          <th>Delete</th>
         </tr>          
         </thead>
         <tbody>
-        {data.map((item, idx) => (
-            <tr key={idx}>
+        {state.map((item, id) => (
+            <tr key={id}>
             <td width="10%">
             <img className='img-cart' src={item.image}  width={120} />
             </td>
@@ -62,13 +41,26 @@ function Cart() {
             <p>Engine Capacity:6000cc</p>
             </div>
             </td>
-            <td>{item.price}</td>
+            <td>{item.price * item.qty}$</td>
             <td>{item.color}</td>
-            <td><GoX color='#000' /></td>
-
+           
+            <td>
+               {/* <button
+                onClick={() => dispatch({ type: "INCREASE", payload: item })}>
+                +
+              </button> */}
+              {item.qty}
+              {/* <button
+                onClick={() => dispatch({ type: "DECREASE", payload: item })}>
+                -
+              </button> */}
+              </td>
+            
+            <td><GoX className='x' color='#000' onClick={() => dispatch({ type: "REMOVE", payload: item })} /></td>
            </tr>
         ))}
         </tbody>
+        
       </table>
       
       
@@ -78,4 +70,3 @@ function Cart() {
 }
 
 export default Cart
-
