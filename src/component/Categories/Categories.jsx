@@ -2,7 +2,7 @@ import React from 'react'
 import './Categories.css'
 import { Link, useParams } from 'react-router-dom';
 import { GoArrowRight } from "react-icons/go";
-const data =[
+var data =[
   {
     name:"AUDI",
     image:"./picture22.png"
